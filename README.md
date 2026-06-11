@@ -1,9 +1,20 @@
 # Polyp Segmentation
 
+![Dice Score](https://img.shields.io/badge/Dice%20Score-0.8602-brightgreen)
+![IoU](https://img.shields.io/badge/IoU-0.7622-blue)
+![Framework](https://img.shields.io/badge/Framework-PyTorch-orange)
+
 A machine learning project for segmenting polyps from colonoscopy images using PyTorch and `segmentation-models-pytorch`. 
 
 ## 📌 Project Overview
 This repository contains a Jupyter Notebook pipeline for training and evaluating a deep learning model on the [Kvasir-SEG dataset](https://datasets.simula.no/kvasir-seg/). The goal of the model is to accurately identify and segment polyps to assist in medical diagnostics.
+
+### Model Performance
+| Model | Dice Score | IoU Score | Notes |
+|---|---|---|---|
+| U-Net from scratch | 0.7708 | — | 120 training samples |
+| U-Net from scratch | 0.7798 | — | 880 training samples |
+| U-Net + ResNet34 (ImageNet) | 0.8602 | 0.7622 | pretrained encoder + augmentation |
 
 ## 📁 Repository Structure
 ```
@@ -55,3 +66,8 @@ Below is an example of the model's segmentation output:
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🔮 Future Work
+- Exploring transformer-based encoder (TransUNet) for improved boundary delineation
+- Extending to multi-class segmentation
+- Real-time inference optimization for clinical deployment
