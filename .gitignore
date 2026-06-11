@@ -1,0 +1,27 @@
+*.pth
+*.zip
+kvasir-seg/
+data/*
+!data/.gitkeep
+models/*
+!models/.gitkeep
+
+# Python caching & environments
+__pycache__/
+.ipynb_checkpoints/
+venv/
+.venv/
+env/
+.env
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Ignore results directory entirely but keep predictions.png for README
+results/*
+!results/predictions.png
