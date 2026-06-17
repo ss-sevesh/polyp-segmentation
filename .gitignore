@@ -25,3 +25,4 @@ Thumbs.db
 # Ignore results directory entirely but keep predictions.png for README
 results/*
 !results/predictions.png
+!results/predictions_overlay.png
