@@ -3,6 +3,7 @@
 ![Dice Score](https://img.shields.io/badge/Dice%20Score-0.8602-brightgreen)
 ![IoU](https://img.shields.io/badge/IoU-0.7622-blue)
 ![Framework](https://img.shields.io/badge/Framework-PyTorch-orange)
+[![Demo](https://img.shields.io/badge/Demo-HuggingFace-yellow)](https://huggingface.co/spaces/11SEVESH/polyp-segmentation)
 
 A machine learning project for segmenting polyps from colonoscopy images using PyTorch and `segmentation-models-pytorch`. 
 
@@ -58,11 +59,12 @@ This project uses the **Kvasir-SEG** dataset.
 The main workflow is currently contained in `notebooks/polyp_segmentation.ipynb`. 
 - You can run the notebook locally using Jupyter or open it in Google Colab.
 - **Note:** If running locally, you can safely ignore or remove any `google.colab` specific imports at the beginning of the notebook.
+- **Live Demo:** https://huggingface.co/spaces/11SEVESH/polyp-segmentation
 
 ## 📊 Results
 Below is an example of the model's segmentation output:
 
-![Model Predictions](results/predictions.png)
+![Model Predictions](results/predictions_overlay.png)
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
